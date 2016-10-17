@@ -16,7 +16,7 @@
 				{
 					var str = $scope.menu;
 					console.log("Luch Menu: "+str);
-					if(!$scope.menu)
+					if($scope.menu != "")
 					{
 
 						var splits = str.split(',');
