@@ -40,7 +40,7 @@
      <ul>
         <li ng-repeat="item in toBuy.buyItems">
           {{ item.quantity }} of {{ item.name }}
-          <button ng-click="toBuy.modifyItem(item.name,item.quantity,$index);">Buy Item</button>
+          <button ng-click="toBuy.modifyItem($index);">Buy Item</button>
         </li>
      </ul>
      <div ng-if="toBuy.buyItems.length == 0" class="emptyMessage">Everything is bought!</div>
